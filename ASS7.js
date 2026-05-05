@@ -13,7 +13,6 @@ async function getJoke() {
     jokeDisplay.textContent = "something is wrong somewhere!";
   }
 }
-// getJoke();
 button.addEventListener("click", getJoke);
 
 moodOptions.forEach((mood) => {

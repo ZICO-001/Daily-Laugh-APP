@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 body {
   background-color: #1a1f2e;
@@ -82,7 +81,7 @@ body {
   margin-bottom: 10px;
   font-family: "Nunito";
 }
-.mood div {
+.mood > div {
   background: #232840;
   border: 1px solid #2e3450;
   width: 130px;
@@ -92,13 +91,13 @@ body {
   text-align: center;
   padding: 10px 5px;
 }
-.mood div:hover {
+.mood > div:hover {
   border-color: #4a6fa5;
   background: #263050;
   cursor: pointer;
   transform: translateY(-2px);
 }
-.mood div.active {
+.mood > div.active {
   background: #1e3a5f;
   border-color: #4a6fa5;
   transform: translateY(-2px);
@@ -140,6 +139,7 @@ body {
   padding: 15px;
   border-radius: 50%;
   transition: 0.4s ease-out;
+  z-index: 1;
 }
 .btn img {
   background-color: #919dc2;
@@ -157,12 +157,19 @@ body {
   .mood {
     gap: 5px;
   }
-  .mood div {
+  .mood > div {
     max-width: 110px;
     width: 100%;
     height: 150px;
   }
   .joke-viewport {
     min-width: 310px;
+  }
+  .btn img:hover {
+    box-shadow: 0 0 7px 1px #919dc2;
+  }
+  .btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 7px 1px #919dc2;
   }
 }
