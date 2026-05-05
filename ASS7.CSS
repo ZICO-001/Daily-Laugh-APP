@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+body {
+  background-color: #1a1f2e;
+  font-family: "Nunito";
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.wrapper {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.wrapper::before {
+  content: "HA";
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  font-family: "Dancing script";
+  font-size: 220px;
+  color: rgba(99, 132, 186, 0.065);
+  line-height: 1;
+}
+.wrapper::after {
+  content: "HA";
+  position: absolute;
+  bottom: -30px;
+  right: -10px;
+  font-family: "Dancing script";
+  font-size: 220px;
+  color: rgba(99, 132, 186, 0.05);
+  line-height: 1;
+}
+.head h3 {
+  font-family: "Bebas Neue";
+  color: #7e87a3c7;
+  letter-spacing: 8px;
+  font-size: 25px;
+}
+.head {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.head h1 {
+  justify-self: center;
+  font-family: "Dancing script";
+  font-size: 60px;
+}
+.head h1 span {
+  color: #7e87a3f8;
+  display: block;
+  margin-top: -25px;
+}
+.head p {
+  word-spacing: 5px;
+  color: #a3a3a379;
+}
+.mood {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  max-width: 680px;
+  width: 100%;
+}
+.mood-container h5 {
+  text-align: center;
+  letter-spacing: 1px;
+  color: #a3a3a379;
+  margin-bottom: 10px;
+  font-family: "Nunito";
+}
+.mood div {
+  background: #232840;
+  border: 1px solid #2e3450;
+  width: 130px;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 2px 7px 9px #1a1f2e;
+  text-align: center;
+  padding: 10px 5px;
+}
+.mood div:hover {
+  border-color: #4a6fa5;
+  background: #263050;
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+.mood div.active {
+  background: #1e3a5f;
+  border-color: #4a6fa5;
+  transform: translateY(-2px);
+}
+.mood p:last-of-type {
+  font-size: 14px;
+  color: #a3a3a379;
+  margin-top: 5px;
+  font-family: "Nunito";
+}
+.mood div p:first-of-type {
+  font-family: "Dancing script";
+  font-size: 18px;
+}
+.joke-viewport {
+  max-width: 6500px;
+  width: 100%;
+  min-height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #232840;
+  margin-top: 40px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.joke-viewport P {
+  color: #cac9c9;
+}
+.btn {
+  margin-top: 40px;
+  background-color: #1a1f2e;
+  width: 60px;
+  height: 60px;
+  border: 4px solid #919dc2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 50%;
+  transition: 0.4s ease-out;
+}
+.btn img {
+  background-color: #919dc2;
+  border-radius: 50%;
+}
+.btn img:hover {
+  box-shadow: 0 0 7px 1px #919dc2;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 7px 1px #919dc2;
+}
+
+@media (max-width: 480px) {
+  .mood {
+    gap: 5px;
+  }
+  .mood div {
+    max-width: 110px;
+    width: 100%;
+    height: 150px;
+  }
+  .joke-viewport {
+    min-width: 310px;
+  }
+}
